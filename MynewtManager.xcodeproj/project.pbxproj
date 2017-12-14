@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B30DE7F1FE2E2E6007126D3 /* CBOREncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30DE7E1FE2E2E6007126D3 /* CBOREncodable.swift */; };
 		5B3F68DE1FE1AEEE00677D1D /* NewtHandler+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F68841FE1AEEE00677D1D /* NewtHandler+Types.swift */; };
 		5B3F68DF1FE1AEEE00677D1D /* NewtHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F68851FE1AEEE00677D1D /* NewtHandler.swift */; };
 		5B3F68E01FE1AEEE00677D1D /* UartPacketManagerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F68871FE1AEEE00677D1D /* UartPacketManagerBase.swift */; };
@@ -97,6 +98,7 @@
 
 /* Begin PBXFileReference section */
 		46FE894B28836458B3A26F0E /* Pods-MynewtManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MynewtManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MynewtManagerTests/Pods-MynewtManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B30DE7E1FE2E2E6007126D3 /* CBOREncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBOREncodable.swift; sourceTree = "<group>"; };
 		5B3F68841FE1AEEE00677D1D /* NewtHandler+Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewtHandler+Types.swift"; sourceTree = "<group>"; };
 		5B3F68851FE1AEEE00677D1D /* NewtHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewtHandler.swift; sourceTree = "<group>"; };
 		5B3F68871FE1AEEE00677D1D /* UartPacketManagerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UartPacketManagerBase.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				5B3F68AB1FE1AEEE00677D1D /* CBORDecoder.swift */,
 				5B3F68AC1FE1AEEE00677D1D /* CBOR.swift */,
 				5B3F68AD1FE1AEEE00677D1D /* Util.swift */,
+				5B30DE7E1FE2E2E6007126D3 /* CBOREncodable.swift */,
 			);
 			path = CBOR;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				5B3F69161FE1AEEF00677D1D /* PeripheralTableViewCell.swift in Sources */,
 				5B3F68E21FE1AEEE00677D1D /* BleManager.swift in Sources */,
 				5B3F691F1FE1AEEF00677D1D /* MqttSettingPickerCell.swift in Sources */,
+				5B30DE7F1FE2E2E6007126D3 /* CBOREncodable.swift in Sources */,
 				5B3F69171FE1AEEF00677D1D /* ScannerViewController.swift in Sources */,
 				5B3F68FE1FE1AEEE00677D1D /* DataFormatter.swift in Sources */,
 				5B3F690C1FE1AEEF00677D1D /* MynewtViewController.swift in Sources */,

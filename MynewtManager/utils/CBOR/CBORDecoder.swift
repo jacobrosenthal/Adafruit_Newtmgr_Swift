@@ -1,9 +1,4 @@
 public enum CBORError : Error {
-    //
-    case invalidCBOR
-    case invalidSubscript
-    
-    // Decoder
     case unfinishedSequence
     case wrongTypeInsideSequence
     case incorrectUTF8String
@@ -121,23 +116,23 @@ public class CBORDecoder {
             
         case let b where 0xc0 <= b && b <= 0xd7:
             guard let item = try decodeItem() else { throw CBORError.unfinishedSequence }
-            return CBOR.tagged(UInt(UInt8(b - 0xc0)), item)
+            return CBOR.tagged(UInt8(b - 0xc0), item)
         case 0xd8:
             let tag = UInt8(try istream.popByte())
             guard let item = try decodeItem() else { throw CBORError.unfinishedSequence }
-            return CBOR.tagged(UInt(tag), item)
+            return CBOR.tagged(tag, item)
         case 0xd9:
             let tag = UInt8(try readUInt(2) as UInt16)
             guard let item = try decodeItem() else { throw CBORError.unfinishedSequence }
-            return CBOR.tagged(UInt(tag), item)
+            return CBOR.tagged(tag, item)
         case 0xda:
             let tag = UInt8(try readUInt(4) as UInt32)
             guard let item = try decodeItem() else { throw CBORError.unfinishedSequence }
-            return CBOR.tagged(UInt(tag), item)
+            return CBOR.tagged(tag, item)
         case 0xdb:
             let tag = UInt8(try readUInt(8) as UInt64)
             guard let item = try decodeItem() else { throw CBORError.unfinishedSequence }
-            return CBOR.tagged(UInt(tag), item)
+            return CBOR.tagged(tag, item)
             
         case let b where 0xe0 <= b && b <= 0xf3: return CBOR.simple(b - 0xe0)
         case 0xf4: return CBOR.boolean(false)
